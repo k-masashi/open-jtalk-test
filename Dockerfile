@@ -37,9 +37,9 @@ RUN wget http://downloads.sourceforge.net/open-jtalk/hts_voice_nitech_jp_atr503_
     tar zxvf hts_voice_nitech_jp_atr503_m001-1.05.tar.gz && \
     cp hts_voice_nitech_jp_atr503_m001-1.05/nitech_jp_atr503_m001.htsvoice /usr/local/lib/htsvoice/
 
-RUN wget http://downloads.sourceforge.net/mmdagent/MMDAgent_Example-1.6.zip && \
-    unzip MMDAgent_Example-1.6.zip && \
-    cp MMDAgent_Example-1.6/Voice/mei/*.htsvoice /usr/local/lib/htsvoice/
+RUN wget http://downloads.sourceforge.net/mmdagent/MMDAgent_Example-1.7.zip && \
+    unzip MMDAgent_Example-1.7.zip && \
+    cp MMDAgent_Example-1.7/Voice/mei/*.htsvoice /usr/local/lib/htsvoice/
 
 # エントリーポイントをセットアップ
 COPY ./entrypoint.sh /usr/local/bin/entrypoint.sh
